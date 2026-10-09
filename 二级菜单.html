@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>二级下拉导航菜单</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body > ul {
+            display: flex;
+            background-color: #244b87;
+        }
+        body > ul > li {
+            position: relative;
+        }
+        body > ul > li > a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 22px;
+        }
+        body > ul > li > a:hover {
+            background-color: #3b6cb8;
+        }
+        body > ul > li > ul {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 280px;
+            background-color: #ffffff;
+            display: none;
+        }
+        body > ul > li > ul > li > a {
+            display: block;
+            padding: 12px 20px;
+            color: #222222;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        body > ul > li > ul > li > a:hover {
+            background-color: #e6edf8;
+        }
+        body > ul > li:hover > ul {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">首页</a></li>
+    <li>
+        <a href="#">教学院(部)</a>
+        <ul>
+            <li><a href="#">计算机与电气工程学院</a></li>
+            <li><a href="#">芙蓉学院</a></li>
+        </ul>
+    </li>
+    <li><a href="#">党群机构</a></li>
+    <li><a href="#">行政教辅机构</a></li>
+    <li><a href="#">教学科研</a></li>
+    <li><a href="#">招生就业</a></li>
+    <li><a href="#">国际交流</a></li>
+    <li><a href="#">数字图书馆</a></li>
+</ul>
+</body>
+</html>
